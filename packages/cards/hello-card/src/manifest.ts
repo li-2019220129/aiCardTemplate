@@ -1,4 +1,7 @@
-export const helloCardManifest = {
+
+import { CardManifest } from '@smart-cards/sdk-core';
+
+export const helloCardManifest: CardManifest = {
   id: 'smart-cards.hello-card',
   name: 'hello-card',
   tag: 'smart-hello-card',
@@ -18,3 +21,5 @@ export const helloCardManifest = {
     }
   }
 };
+
+

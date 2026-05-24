@@ -10,13 +10,13 @@ export interface CardManifest {
   packageName: string;
   category: string;
   owner: string;
-  runtime: CardRuntime;
+  runtime: string;
   status: 'active' | 'beta' | 'deprecated';
   propsSchema: Record<string, unknown>;
   minSdkVersion?: string;
 }
 
-export interface CardPublicInfo extends CardManifest {}
+export interface CardPublicInfo extends CardManifest { }
 
 export interface CardRegistration<TModule = unknown> {
   manifest: CardManifest;
