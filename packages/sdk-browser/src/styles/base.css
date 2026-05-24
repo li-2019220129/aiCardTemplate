@@ -1,0 +1,156 @@
+:root {
+  color: #1f2937;
+  background:
+    radial-gradient(circle at top left, rgba(14, 165, 233, 0.18), transparent 28%),
+    linear-gradient(135deg, #f8fafc 0%, #e0f2fe 48%, #ecfeff 100%);
+  font-family: "Segoe UI", "PingFang SC", sans-serif;
+  line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  background: #0f766e;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  padding: 0.8rem 1.2rem;
+}
+
+button.secondary {
+  background: #155e75;
+}
+
+code,
+pre {
+  font-family: "Cascadia Code", "Consolas", monospace;
+}
+
+.page-shell,
+.host-shell {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 32px 20px 48px;
+}
+
+.hero-panel,
+.panel,
+.host-panel {
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: 0 18px 60px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(12px);
+}
+
+.hero-panel {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 2fr 1fr;
+  margin-bottom: 24px;
+  padding: 28px;
+}
+
+.hero-kicker {
+  margin: 0 0 8px;
+  color: #0f766e;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero-panel h1,
+.panel h2,
+.host-panel h1,
+.host-panel h2 {
+  margin: 0;
+}
+
+.hero-copy {
+  margin: 12px 0 0;
+  max-width: 54ch;
+}
+
+.hero-actions,
+.host-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+.panel,
+.host-panel {
+  margin-bottom: 24px;
+  padding: 24px;
+}
+
+.panel-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.registry-grid,
+.demo-layout,
+.host-layout {
+  display: grid;
+  gap: 24px;
+}
+
+.registry-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.demo-layout,
+.host-layout {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.registry-item {
+  border-radius: 20px;
+  background: #f8fafc;
+  padding: 18px;
+}
+
+.registry-meta {
+  color: #475569;
+  font-size: 0.92rem;
+  margin-top: 6px;
+}
+
+.code-block,
+#host-log {
+  margin: 0;
+  overflow: auto;
+  border-radius: 20px;
+  background: #0f172a;
+  color: #dbeafe;
+  padding: 18px;
+  white-space: pre-wrap;
+}
+
+.mount-zone,
+#host-card {
+  min-height: 280px;
+}
+
+@media (max-width: 900px) {
+  .hero-panel,
+  .demo-layout,
+  .host-layout {
+    grid-template-columns: 1fr;
+  }
+}

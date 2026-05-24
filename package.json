@@ -1,0 +1,28 @@
+{
+  "name": "smart-card-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "packages/sdk-core",
+    "packages/sdk-browser",
+    "packages/registry",
+    "packages/host-demo",
+    "packages/cards/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev:sdk": "npm run dev -w @smart-cards/sdk-browser",
+    "dev:host": "npm run dev -w @smart-cards/host-demo",
+    "dev:hello": "npm run dev -w @smart-cards/hello-card",
+    "dev:stats": "npm run dev -w @smart-cards/stats-card",
+    "build:sdk": "npm run build -w @smart-cards/sdk-browser",
+    "build:host": "npm run build -w @smart-cards/host-demo",
+    "build:hello": "npm run build -w @smart-cards/hello-card",
+    "build:stats": "npm run build -w @smart-cards/stats-card"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "vite": "^6.0.1"
+  }
+}

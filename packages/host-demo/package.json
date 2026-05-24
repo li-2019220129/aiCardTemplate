@@ -1,0 +1,14 @@
+{
+  "name": "@smart-cards/host-demo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "@smart-cards/sdk-browser": "1.0.0",
+    "vue": "^3.5.13"
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Card SDK Browser</title>
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero-panel">
+        <div>
+          <p class="hero-kicker">SDK Browser</p>
+          <h1>浏览器运行时层</h1>
+          <p class="hero-copy">
+            这里展示的是浏览器运行时层，它依赖 `sdk-core` 和 `registry`，但不直接耦合具体业务宿主。
+          </p>
+        </div>
+        <div class="hero-actions">
+          <button id="mount-hello" type="button">渲染欢迎卡片</button>
+          <button id="mount-stats" type="button" class="secondary">渲染数据卡片</button>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="panel-header">
+          <h2>注册表</h2>
+          <span>Runtime + Registry</span>
+        </div>
+        <div id="registry-list" class="registry-grid"></div>
+      </section>
+      <section class="demo-layout">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>调用方式</h2>
+            <span>SDK Browser API</span>
+          </div>
+          <pre id="code-example" class="code-block"></pre>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <h2>渲染结果</h2>
+            <span>#card-mount</span>
+          </div>
+          <div id="card-mount" class="mount-zone"></div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/playground.ts"></script>
+  </body>
+</html>
