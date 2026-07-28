@@ -16,10 +16,12 @@
     "dev:host": "npm run dev -w @smart-cards/host-demo",
     "dev:hello": "npm run dev -w @smart-cards/hello-card",
     "dev:stats": "npm run dev -w @smart-cards/stats-card",
+    "dev:arrow": "npm run dev -w @smart-cards/arrow-card",
     "build:sdk": "npm run build -w @smart-cards/sdk-browser",
     "build:host": "npm run build -w @smart-cards/host-demo",
     "build:hello": "npm run build -w @smart-cards/hello-card",
-    "build:stats": "npm run build -w @smart-cards/stats-card"
+    "build:stats": "npm run build -w @smart-cards/stats-card",
+    "build:arrow": "npm run build -w @smart-cards/arrow-card"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.1",
